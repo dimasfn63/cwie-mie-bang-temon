@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cwie Mie Bang Temon</title>
+
+    <link href="dist/output.css" rel="stylesheet">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+
+</head>
+<body>
+
+    <!-- Header Section Start -->
+     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+
+                <div class="px-4">
+                    <a href="#home" class="flex items-center">
+                        <img src="dist/img/logo.png" alt="Logo" class="w-10 h-10 mr-1 object-contain">
+        
+                        <span class="font-bold text-lg text-primary ml-2">Cwie Mie Bang Temon</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Kami</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Spesial Untukmu</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Pelanggan Setia</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Kontak</a>
+                            </li>
+
+                            <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                            <div class="flex">
+                                <span class="mr-2 text-sm text-slate-500">light</span>
+                                <input type="checkbox" class="hidden" id="dark-toggle" />
+                                <label for="dark-toggle">
+                                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                </div>
+                                </label>
+                                <span class="ml-2 text-sm text-slate-500">dark</span>
+                            </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- Header Section End -->
+    
+    <!-- Hero Section Start -->
+     <section id="home" class="pt-36 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Lapar? Nyobain Yuk! <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Cwie Mie Bang Temon </span></h1>
+
+                    <!-- <h2 class="font-medium text-secondary text-lg mb-5 dark:text-white">Didirikan oleh 2 saudari</h2> -->
+
+                    <p class="font-medium text-secondary mb-10 dark:text-white">Enak, Bikin Ketagihan! <span class="text-dark font-bold dark:text-white">  Rasakan Sensasi Mie Asli Malang</span></p>
+
+                    <a href="https://wa.me/6289651808896?text=Halo%20kak%20saya%20ingin%20pesan%20Cwie%20Mie" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transision duration-300 ease-in-out">Hubungi Kami</a>
+
+                </div>
+
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+
+                        <img src="dist/img/portofolio/1.jpg" alt="fuggy" class="max-w-full mx-auto relative z-10">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+     <section id="about" class="pt-36 pb-32 bg-slate-50 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Kami</h4>
+
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Kelezatan Autentik dalam Setiap Mangkuk</h2>
+
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Cwie Mie Bang Temon adalah UMKM kuliner yang hadir dari kecintaan terhadap hidangan mie khas Malang bertabur topping lezat dan bumbu rempah pilihan. Kami menyajikan Cwie Mie dengan tekstur mie yang kenyal, taburan ayam cincang gurih, selada segar, serta pangsit renyah yang siap memanjakan lidah Anda di setiap gigitan.</p>
+
+                </div>
+
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Terhubung</h3>
+
+                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+                        Jangan lewatkan promo menarik, info menu baru, dan keseruan di dapur kami! Kami selalu senang menyapa para pecinta kuliner mie. Silakan hubungi kami atau ikuti media sosial kami melalui tautan di bawah ini.
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Tiktok -->
+                        <a href="https://www.tiktok.com/@cwiemie.bangtemon" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-lingkar hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                         </a>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About Section End -->
+
+    <!-- Portofolio Section Start -->
+     <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+
+                    <h4 class="font-semibold text-lg text-primary mb-2 ">Spesial Untukmu</h4>
+
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Menu Andalan Kami</h2>
+
+                    <p class="font-medium text-md text-secondary md:text-lg dark:text-white">Nikmati aneka sajian Cwie Mie khas Bang Temon yang disajikan dengan bumbu otentik, topping melimpah, dan bahan-bahan segar setiap hari. Dari yang gurih klasik hingga pilihan pedas mantap, siap memanjakan lidah Anda di setiap seruputan:</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+
+                <!-- menu 1 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/1.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Cwie Mie</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Menu andalan khas Malang dengan mi kenyal lembut yang disiram minyak bumbu gurih khas Bang Temon. Disajikan lengkap dengan taburan daging ayam cincang halus (topping putih bersih), selada segar, daun bawang, serta kerupuk pangsit renyah. Rasanya gurih, ringan, dan bikin nagih sejak suapan pertama!</p>     
+                </div>
+                <!-- menu 2 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/2.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Mie Yamin</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Perpaduan sempurna rasa gurih dan manis yang meresap sempurna ke setiap helai mi. Dilumuri kecap manis berkualitas dengan bumbu rahasia khas Bang Temon, dilengkapi ayam cincang gurih, sayuran segar, dan pangsit renyah. Cocok banget buat kamu pecinta kuliner bercita rasa manis-gurih.</p>     
+                </div>
+                <!-- menu 3 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/3.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Mie Jebew</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Siap-siap dibuat keringat dingin! Mi pedas dengan bumbu minyak cabai merah (chili oil) khas racikan Bang Temon yang super nendang. Tingkat kepedasannya dirancang pas membakar lidah tapi tetap nikmat, disajikan dengan taburan ayam dan pangsit kriuk renyah. Wajib coba bagi pencinta makanan ekstrem pedas!</p>     
+                </div>
+
+                <!-- menu 4 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/4.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Mie Jebew Mentai</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Sensasi unik perpaduan rasa pedas meledak dari Mie Jebew yang berpadu dengan saus mentai creamy, gurih, dan smoky di atasnya. Kombinasi rasa pedas membakar dan kelembutan saus mentai menciptakan harmoni rasa modern yang sangat digemari saat ini.</p>     
+                </div>
+
+                <!-- menu 5 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/5.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Wonton Kuah</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Hidongan pendamping atau comfort food terbaik. Wonton lembut dengan isian daging ayam padat dan juicy, direbus dalam kuah kaldu ayam hangat yang gurih, harum, dan kaya rempah. Sangat nikmat diseruput selagi hangat untuk menghangatkan suasana hari Anda.</p>     
+                </div>
+
+                <!-- menu 6 -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/6.jpg" alt="proyek1" width="w-full">
+                    </div>                   
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Wonton Jebew</h3>
+                        <p class="font-medium text-base text-secondary dark:text-white">Wonton lembut isi ayam berbalut kuah atau minyak cabai (chili oil) pedas membara ala "Jebew". Perpaduan tekstur wonton yang kenyal-lembut di dalam dengan siraman bumbu pedas gurih di luar memberikan ledakan rasa pedas yang langsung bikin ketagihan.</p>     
+                </div>
+
+
+            </div>
+
+        </div>
+     </section>
+    <!-- Portofolio Section End -->
+
+    <!-- Clients Section starts -->
+    
+    <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
+        <div class="container">
+            <div class="w-full px-4">
+            <!-- Tambahkan max-w-xl mx-auto di sini agar lebarnya pas dan berada di tengah -->
+                <div class="mx-auto max-w-xl text-center mb-16">
+
+                    <h4 class="font-semibold text-lg text-primary mb-2">Pelanggan Setia</h4>
+
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Mereka yang Telah Ketagihan dengan Cwie Mie Bang Temon</h2>
+
+                    <p class="font-medium text-md text-secondary md:text-lg dark:text-dark">Kebahagiaan terbesar kami adalah melihat mangkuk kosong dan senyuman di setiap suapan Anda. Cwie Mie Bang Temon telah melayani ratusan mangkuk pesanan, mulai dari santapan santai penumpas lapar di jam istirahat, menu kumpul bareng sahabat, hingga pesanan acara spesial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section End -->
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Kontak</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+            <p class="mb-4 text-md font-medium text-secondary md:text-lg">
+                Siap mencicipi kelezatan Cwie Mie Bang Temon? Kami sangat senang menerima pesanan, pertanyaan, atau sapaan dari Anda. Silakan hubungi kami melalui saluran di bawah ini:
+            </p>
+
+            <p class="mb-4 text-md font-medium text-secondary md:text-lg">
+                <strong>Tiktok:</strong> Klik dan follow <a href="https://www.tiktok.com/@cwiemie.bangtemon" class="text-dark font-bold dark:text-white hover:underline">Cwie Mie Bang Temon</a> untuk melihat video keseruan menu dan informasi terbaru kami.
+            </p>
+
+            <p class="mb-4 text-md font-medium text-secondary md:text-lg">
+                <strong>WhatsApp:</strong> Hubungi kami secara langsung via WhatsApp di nomor <span class="text-dark font-bold dark:text-white"><a href="https://wa.me/6289651808896?text=Halo%20kak%20saya%20ingin%20pesan%20Cwie%20Mie" class="text-white hover:underline">089651808896</a></span>  untuk pemesanan cepat dan reservasi.
+            </p>
+
+            <p class="mb-4 text-md font-medium text-secondary md:text-lg">
+                <strong>Titik Lokasi Warung:</strong> <span class="text-dark font-bold dark:text-white">Bambe, Driyorejo, Gresik (Belakang Indomaret Bambe).</span>  Temukan kelezatannya langsung di kedai kami atau pesan via WhatsApp! 
+            </p>
+
+            <p class="text-md font-medium text-secondary md:text-lg">
+                Jam Buka: Warung kami siap melayani Anda setiap hari <span class="text-dark font-bold dark:text-white">pukul 17.00 - 21.00 WIB.</span> 
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+            <!-- Hubungi -->
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-5 text-4xl font-bold text-white">Cwie Mie Bang Temon</h2>
+            <h3 class="mb-2 text-2xl font-bold">Hubungi Saya</h3>
+            <p>WhatsApp : 
+                <a href="https://wa.me/6289651808896?text=Halo%20kak%20saya%20ingin%20pesan%20Cwie%20Mie" class="text-white hover:underline">089651808896</a>
+            </p>   
+          </div>
+
+          <!-- postingan -->
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white"></h3>
+            
+          </div>
+
+          <!-- tautan -->
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
+              </li>
+              <li>
+                <a href="#about" class="mb-3 inline-block text-base hover:text-primary">Tentang Kami</a>
+              </li>
+              <li>
+                <a href="#portofolio" class="mb-3 inline-block text-base hover:text-primary">Spesial Untukmu</a>
+              </li>
+              <li>
+                <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Pelanggan Setia</a>
+              </li>
+              <li>
+                <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Kontak</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+                        <!-- Tiktok -->
+                        <a href="https://www.tiktok.com/@cwiemie.bangtemon" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-lingkar hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                         </a>
+                        
+
+                         
+
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Dibuat oleh 
+            <a href="https://www.instagram.com/fariznabalah/" target="_blank" class="font-bold text-primary">Dimas Fariz</a>, menggunakan
+            
+            <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer section End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] flex h-10 w-10 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+        
+      <span class="mt-1 block h-2 w-3 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+     <script src="dist/js/script.js"></script>
+</body>
+</html>
+>
